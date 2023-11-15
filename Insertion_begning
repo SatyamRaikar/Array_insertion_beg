@@ -1,0 +1,20 @@
+//Insertion of element to the beginning of the array
+#include<stdio.h>
+void main()
+  {
+      int n,a[20],i,e;
+      printf("Enter the Limit:");
+      scanf("%d",&n);
+      printf("Enter the Elements:");
+      for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+      printf("Enter the Element to be inserted in the beginning:");
+      scanf("%d",&e);
+      for(i=n-1;i>=0;i--)
+      a[i+1]=a[i];
+      a[0]=e;
+      n++;
+      printf("ELEMENTS AFTER INSERTION:");
+      for(i=0;i<n;i++)
+      printf("%d ",a[i]);
+  }
